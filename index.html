@@ -1,0 +1,172 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>300x250</title>
+<meta name="ad.size" content="width=300,height=250">
+<link href="animated.css" type="text/css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+<!-- GDN JS -->
+<script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>
+
+<style>
+body {
+	margin: 0;
+    padding: 0;
+	background:#e3e3e3;
+}
+#mainbanner{
+	width: 298px; /* :) 2 pixels lower to account for the border */
+	height: 248px; /* :) 2 pixels lower to account for the border */
+	background-color:#fff;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	border: 1px solid #3c3c3c;
+}
+#wraper{
+	width: 298px;
+	height: 248px;
+}
+/* button clickTag*/
+#clickbanner{
+	width: 298px;
+	height: 248px;
+	position:absolute;
+	z-index:1;
+	cursor:pointer;
+}
+#bg{
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	opacity:0;
+}
+
+#logo{
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 185px;
+	left: 160px;
+	opacity: 0;
+}
+#wave{
+	width: auto;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 156px;
+	opacity: 0;
+}
+#text1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 19pt;
+	color: #FFF;
+	text-align: right;
+	width: 275px;
+	height: auto;
+	position: absolute;
+	top: 19px;
+	left: 17px;
+	line-height: 21pt;
+	text-transform: uppercase;
+	opacity: 0;
+}
+#text2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 13pt;
+	color: #FFF;
+	text-align: right;
+	width: 189px;
+	height: auto;
+	position: absolute;
+	top: 76px;
+	left: 101px;
+	line-height: 14pt;
+	opacity: 0;
+}
+
+#icon{
+	width: auto;
+	height: auto;
+	position: absolute;
+	left: 5px;
+	top: 101px;
+	opacity: 0;
+}
+#cta{
+	width: auto;
+	height: auto;
+	position: absolute;
+	left: 165px;
+	top: 187px;
+	opacity: 0;
+}
+
+
+
+/* overlay */
+/*
+#text-over{
+	width: auto;
+	height: auto;
+	margin-top:20%;
+	display:none;
+}
+#expand {
+  height: 2%;
+  margin-left:19.5%;
+  margin-right:20%;
+  margin-top:60%;
+  background: #e34f26;
+  position:inherit;
+}
+#expandbg {
+  width: 59%;
+  height: 2%;
+  margin-left:19.5%;
+  margin-right:20%;
+  margin-top:60%;
+  background: #fff;
+  position:inherit;
+}*/
+/* overlay */
+
+
+</style>
+</head>
+
+<body>
+<div id="mainbanner" ><!--wraper-->
+<div id="clickbanner" onClick="ExitApi.exit()">  <!--clickTag-->
+
+<div id="wraper">
+<div id="bg" class="bounceInbg"><img src="assets/bg.jpg" /></div>
+<div id="wave" class="fadeInUp"><img src="wave.png" /><span class="bounceInbg"><img src="button.png" /></span></div>
+<div id="logo" class="bounceInbg"><img src="assets/logo.png" /></div>
+
+<div id="text1" class="fadeInUp">FIND THE BEST BEACHIN'<br>
+  VACAY DEALS.</div>
+<div id="text2" class="fadeInUp">Book Today at<br>
+  Best Internet Rate!<br></div>
+<div id="icon" class="bounceInbg"><img src="icon.png" /></div>
+<div id="cta" class="bounceInbg"></div>
+
+</div>
+
+</div>
+</div>
+
+<!-- animated JS -->
+<script src="app.js"></script>
+
+</body>
+</html>
